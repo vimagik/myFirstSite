@@ -1,22 +1,16 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col>
-        <h1 align="center">
-          Главная страница
-        </h1>
-      </v-col>
-    </v-row>
-    <v-row>
-      <nuxt />
-    </v-row>
-  </v-container>
+  <v-app>
+    <v-container>
+      <v-row>
+        <v-col>
+          <div class="text-h1">
+            Главная страница
+          </div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <nuxt />
+      </v-row>
+    </v-container>
+  </v-app>
 </template>
-
-<script>
-export default {
-  data () {
-
-  }
-}
-</script>
