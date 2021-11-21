@@ -1,10 +1,12 @@
 <template>
-  <div>Мой класс</div>
+  <v-container>
+    How to join
+  </v-container>
 </template>
 
 <script>
 export default {
-  name: 'MyClass'
+  name: 'HowToJoin'
 }
 </script>
 
