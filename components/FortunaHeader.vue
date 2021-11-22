@@ -49,7 +49,7 @@ export default {
       buttons: [
         { source: schoolButton, name: 'Link to school page', link: { name: 'school' } },
         { source: clubButton, name: 'Link to Club page', link: { name: 'club' } },
-        { source: dosugButton, name: 'Link to Entertainment page', link: { name: 'еntertainment' } },
+        { source: dosugButton, name: 'Link to Entertainment page', link: { name: 'entertainment' } },
         { source: avtorButton, name: 'Link to author', link: { name: 'about' } }
       ]
     }

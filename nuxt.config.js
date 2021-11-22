@@ -9,10 +9,10 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - myfirstsite',
-    title: 'myfirstsite',
+    titleTemplate: '%s - мой первый сайт',
+    title: 'Главная страница',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },

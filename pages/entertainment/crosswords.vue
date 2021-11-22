@@ -1,10 +1,12 @@
 <template>
-  <div>Развлечение</div>
+  <v-container>
+    Crosswords will be here
+  </v-container>
 </template>
 
 <script>
 export default {
-  name: 'Entertainment'
+  name: 'Crosswords'
 }
 </script>
 
