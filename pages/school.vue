@@ -12,6 +12,7 @@
               color="primary"
               :to="button.page"
               nuxt
+              exact
             >
               {{ button.name }}
             </v-btn>
@@ -34,10 +35,11 @@ export default {
     return {
       bgSchool,
       buttons: [
-        { id: 0, name: 'Школа искусств', page: '/school/art' },
-        { id: 1, name: 'Спортивная школа', page: '/school/sport' },
-        { id: 2, name: 'Оздоровительный центр', page: '/school/wellness-center' },
-        { id: 3, name: 'Производственный комплекс', page: '/school/production-complex' }
+        { id: 0, name: 'О школе', page: '/school/' },
+        { id: 1, name: 'Школа искусств', page: '/school/art' },
+        { id: 2, name: 'Спортивная школа', page: '/school/sport' },
+        { id: 3, name: 'Оздоровительный центр', page: '/school/wellness-center' },
+        { id: 4, name: 'Производственный комплекс', page: '/school/production-complex' }
       ]
     }
   }

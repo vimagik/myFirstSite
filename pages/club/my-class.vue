@@ -1,12 +1,33 @@
 <template>
   <v-container>
-    My class
+    <v-col>
+      <v-row justify="center">
+        <div class="text-h4" style="text-align: center; color: #FFFF00">
+          <p>З н а к о м ь т е с ь</p>
+          <p>мой класс !!!</p>
+        </div>
+      </v-row>
+      <v-row>
+        <v-img :src="classPhoto">
+          <router-link tag="a" to="/about">
+            <a style="position:absolute; top: 33%; right: 90%; height:5%; width: 5%;" />
+          </router-link>
+        </v-img>
+      </v-row>
+    </v-col>
   </v-container>
 </template>
 
 <script>
+import classPhoto from '@/static/klass.jpg'
+
 export default {
-  name: 'MyClass'
+  name: 'MyClass',
+  data () {
+    return {
+      classPhoto
+    }
+  }
 }
 </script>
 

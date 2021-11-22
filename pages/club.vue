@@ -11,6 +11,7 @@
               block
               :to="button.page"
               nuxt
+              exact
             >
               {{ button.name }}
             </v-btn>
@@ -33,9 +34,9 @@ export default {
     return {
       bgImage,
       buttons: [
-        { id: 0, name: 'Как вступить в клуб', page: '/club/how-to-join' },
-        { id: 1, name: 'Мой класс', page: '/club/my-class' },
-        { id: 2, name: 'Друзья', page: '/club/friends' }
+        { id: 0, name: 'О клубе', page: '/club' },
+        { id: 1, name: 'Как вступить в клуб', page: '/club/how-to-join' },
+        { id: 2, name: 'Мой класс', page: '/club/my-class' }
       ]
     }
   }
