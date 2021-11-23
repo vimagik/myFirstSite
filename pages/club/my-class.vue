@@ -9,9 +9,9 @@
       </v-row>
       <v-row>
         <v-img :src="classPhoto">
-          <router-link tag="a" to="/about">
+          <nuxt-link tag="a" to="/about">
             <a style="position:absolute; top: 33%; right: 90%; height:5%; width: 5%;" />
-          </router-link>
+          </nuxt-link>
         </v-img>
       </v-row>
     </v-col>

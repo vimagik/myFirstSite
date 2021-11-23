@@ -37,7 +37,7 @@ export default {
         [
           { id: 0, name: 'Развлекаловка', page: '/entertainment' },
           { id: 1, name: 'Анекдоты', page: '/entertainment/anecdotes' },
-          { id: 2, name: 'Кроссворды', page: '/entertainment/crosswords' }
+          { id: 2, name: 'Вербальные забавы', page: '/entertainment/crosswords' }
         ]
     }
   }
