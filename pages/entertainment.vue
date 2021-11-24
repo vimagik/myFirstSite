@@ -43,9 +43,7 @@ export default {
   },
   computed: {
     pagesCount () {
-      const pagesCount = this.$route.path.split('/').length
-      debugger
-      return pagesCount
+      return this.$route.path.split('/').length
     }
   }
 }
