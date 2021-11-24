@@ -11,7 +11,7 @@
               block
               :to="button.page"
               nuxt
-              exact
+              :exact="!(pagesCount > 3 & button.id !== 0)"
             >
               {{ button.name }}
             </v-btn>
@@ -39,6 +39,13 @@ export default {
           { id: 1, name: 'Анекдоты', page: '/entertainment/anecdotes' },
           { id: 2, name: 'Вербальные забавы', page: '/entertainment/crosswords' }
         ]
+    }
+  },
+  computed: {
+    pagesCount () {
+      const pagesCount = this.$route.path.split('/').length
+      debugger
+      return pagesCount
     }
   }
 }
