@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col>
-        <div class="text-body-1" style="color: #395197">
+        <div class="text-body-1 mt-5" style="color: #395197">
           <p>Представленные мною анекдоты делятся на две группы:</p>
           <p>
             <nuxt-link to="/entertainment/anecdotes/about_school">
