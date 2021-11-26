@@ -2,18 +2,26 @@
   <v-container>
     <v-row>
       <v-col>
-        <v-tabs v-model="tab" background-color="transparent" grow>
-          <v-tab>Метаграммы</v-tab>
-          <v-tab>Анаграммы</v-tab>
-          <v-tab>Шарады</v-tab>
-          <v-tab>Логогрифы</v-tab>
+        <v-tabs ref="ftTab" v-model="tab" background-color="transparent" grow>
+          <v-tab href="#0">
+            Метаграммы
+          </v-tab>
+          <v-tab href="#1">
+            Анаграммы
+          </v-tab>
+          <v-tab href="#2">
+            Шарады
+          </v-tab>
+          <v-tab href="#3">
+            Логогрифы
+          </v-tab>
         </v-tabs>
       </v-col>
     </v-row>
     <v-row>
       <v-col>
         <v-tabs-items id="custom-tab-items" v-model="tab">
-          <v-tab-item>
+          <v-tab-item value="0">
             <div class="text-body-1">
               <p>
                 Загадка, основанная на последовательном изменении в слове одной или нескольких букв, называется
@@ -57,7 +65,7 @@
               </p>
             </div>
           </v-tab-item>
-          <v-tab-item>
+          <v-tab-item value="1">
             <div class="text-body-1">
               <p>
                 Анаграммы образуются при перестановке в слове букв. Например: липа-пила. Добавлять или
@@ -96,7 +104,7 @@
               </v-container>
             </div>
           </v-tab-item>
-          <v-tab-item>
+          <v-tab-item value="2">
             <div class="text-body-1">
               <p>
                 В шарадах загаданное слово состоит из нескольких частей, каждая из которых представляет
@@ -141,7 +149,7 @@
               </p>
             </div>
           </v-tab-item>
-          <v-tab-item>
+          <v-tab-item value="3">
             <div class="text-body-1">
               <p>
                 В логогрифе любая буква может быть убрана и наоборот - может быть присоединена новая. К примеру,
@@ -189,9 +197,14 @@
 <script>
 export default {
   name: 'Fun',
-  data () {
-    return {
-      tab: null
+  computed: {
+    tab: {
+      set (tab) {
+        this.$router.replace({ query: { ...this.$route.query, tab } })
+      },
+      get () {
+        return this.$route.query.tab
+      }
     }
   }
 }

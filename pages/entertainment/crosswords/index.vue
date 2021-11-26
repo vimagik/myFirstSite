@@ -7,18 +7,26 @@
         </div>
         <div class="text-body-1 mt-5" style="text-align: center;">
           <ul>
-            <li class="ft-large-text">
-              Метаграммы
-            </li>
-            <li class="ft-large-text">
-              Анаграммы
-            </li>
-            <li class="ft-large-text">
-              Шарады
-            </li>
-            <li class="ft-large-text">
-              Логогрифы
-            </li>
+            <nuxt-link to="/entertainment/crosswords/fun?tab=0">
+              <li class="ft-large-text">
+                Метаграммы
+              </li>
+            </nuxt-link>
+            <nuxt-link to="/entertainment/crosswords/fun?tab=1">
+              <li class="ft-large-text">
+                Анаграммы
+              </li>
+            </nuxt-link>
+            <nuxt-link to="/entertainment/crosswords/fun?tab=2">
+              <li class="ft-large-text">
+                Шарады
+              </li>
+            </nuxt-link>
+            <nuxt-link to="/entertainment/crosswords/fun?tab=3">
+              <li class="ft-large-text">
+                Логогрифы
+              </li>
+            </nuxt-link>
           </ul>
         </div>
       </v-col>
