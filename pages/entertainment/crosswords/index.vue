@@ -5,6 +5,11 @@
         <div class="text-h4" style="color: #FF00FF">
           Существует много типов вербальных игр !!! Вам представлена лишь малая доля !!!
         </div>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-spacer v-if="$vuetify.breakpoint.smAndUp" />
+      <v-col cols="4">
         <div class="text-body-1 mt-5" style="text-align: center;">
           <ul>
             <nuxt-link to="/entertainment/crosswords/fun?tab=0">
@@ -30,6 +35,7 @@
           </ul>
         </div>
       </v-col>
+      <v-spacer />
     </v-row>
   </v-container>
 </template>

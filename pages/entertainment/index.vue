@@ -2,7 +2,7 @@
   <v-container>
     <v-col>
       <v-row justify="center">
-        <v-img :src="entNBanner" max-width="507">
+        <v-img :src="entNBanner" :max-width="$vuetify.breakpoint.smAndDown?300:507">
           <nuxt-link tag="a" to="/entertainment/anecdotes">
             <a style="position:absolute; top: 33%; right: 70%; height:30%; width: 30%;" />
           </nuxt-link>
